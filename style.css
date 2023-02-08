@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  background: url(images/background.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  min-height: fit-content;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#cards-images div {
+  border: 2px ridge yellow;
+  border-radius: 10px;
+  height: 220px;
+  width: calc(220px * 5 / 7);
+  margin: 3em auto;
+}
+
+
+img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 450px) {
+  #container {
+    width: 100%;
+  }
+
+  #cards-images div {
+    height: 150px;
+  width: calc(150px * 5 / 7);
+  }
+}
+
+button {
+  background-color: yellow;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 auto;
+  padding: 0.5em 1.2em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#draw {
+  width: 100%;
+}
+
+button:disabled{
+    background-color: #fff;
+    cursor: not-allowed! important;
+}
+
+
+h2{
+    margin-top: 20px;
+}
